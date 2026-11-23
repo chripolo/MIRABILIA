@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0000000000000000000011 /* Taxon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000001 /* Taxon.swift */; };
+		AA0000000000000000000012 /* TaxonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000002 /* TaxonRepository.swift */; };
+		AA0000000000000000000013 /* SearchTaxaUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000003 /* SearchTaxaUseCase.swift */; };
+		BEBBCDBD30B25187004E1BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEBBCDB930B25187004E1BD2 /* Assets.xcassets */; };
+		BEBBCDBE30B25187004E1BD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDBA30B25187004E1BD2 /* ContentView.swift */; };
+		BEBBCDBF30B25187004E1BD2 /* MIRABILIAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDBB30B25187004E1BD2 /* MIRABILIAApp.swift */; };
+		BEBBCDDC30B34771004E1BD2 /* iNaturalistClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDD830B34771004E1BD2 /* iNaturalistClient.swift */; };
+		BEBBCDDD30B34771004E1BD2 /* TaxaResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDD430B34771004E1BD2 /* TaxaResponseDTO.swift */; };
+		BEBBCDDE30B34771004E1BD2 /* HTTPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDD730B34771004E1BD2 /* HTTPTransport.swift */; };
+		BEBBCDDF30B34771004E1BD2 /* TaxonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDD530B34771004E1BD2 /* TaxonDTO.swift */; };
+		BEBBCDE030B34771004E1BD2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDD930B34771004E1BD2 /* NetworkError.swift */; };
+		BEBBCDE130B34771004E1BD2 /* URLSessionHTTPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDDA30B34771004E1BD2 /* URLSessionHTTPTransport.swift */; };
+		BEBBCDEB30B34B76004E1BD2 /* TaxonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDE930B34B76004E1BD2 /* TaxonGroup.swift */; };
+		BEBBCDEC30B34B76004E1BD2 /* TaxonPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDEA30B34B76004E1BD2 /* TaxonPhoto.swift */; };
+		BEBBCDED30B34B76004E1BD2 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDE830B34B76004E1BD2 /* Observation.swift */; };
+		BEBBCDF530B34B92004E1BD2 /* ObservationResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDF230B34B92004E1BD2 /* ObservationResponseDTO.swift */; };
+		BEBBCDF630B34B92004E1BD2 /* TaxonPhotoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDF430B34B92004E1BD2 /* TaxonPhotoDTO.swift */; };
+		BEBBCDF730B34B92004E1BD2 /* ObservationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDF130B34B92004E1BD2 /* ObservationDTO.swift */; };
+		BEBBCDF830B34B92004E1BD2 /* PhotoDetailDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDF330B34B92004E1BD2 /* PhotoDetailDTO.swift */; };
+		BEBBCE0B30B34BC6004E1BD2 /* TaxonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDFE30B34BC6004E1BD2 /* TaxonMapper.swift */; };
+		BEBBCE0C30B34BC6004E1BD2 /* ObservationMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCDFD30B34BC6004E1BD2 /* ObservationMapper.swift */; };
+		BEBBCE0D30B34BC6004E1BD2 /* iNaturalistTaxonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCE0130B34BC6004E1BD2 /* iNaturalistTaxonRepository.swift */; };
+		BEBBCE0E30B34BC6004E1BD2 /* TaxonGroupIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCE0330B34BC6004E1BD2 /* TaxonGroupIDs.swift */; };
+		BEBBCE0F30B34BC6004E1BD2 /* PhotoPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCE0230B34BC6004E1BD2 /* PhotoPolicy.swift */; };
+		BEBBCE1030B34BC6004E1BD2 /* iNaturalistObservationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCE0030B34BC6004E1BD2 /* iNaturalistObservationRepository.swift */; };
+		BEBBCE1830B34C48004E1BD2 /* SearchTaxaUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCE1630B34C48004E1BD2 /* SearchTaxaUseCaseTests.swift */; };
+		BEBBCE1930B34C48004E1BD2 /* iNaturalistClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCE1130B34C48004E1BD2 /* iNaturalistClientTests.swift */; };
+		BEBBCE1A30B34C48004E1BD2 /* ObservationMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCE1230B34C48004E1BD2 /* ObservationMapperTests.swift */; };
+		BEBBCE1B30B34C48004E1BD2 /* PhotoPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCE1330B34C48004E1BD2 /* PhotoPolicyTests.swift */; };
+		BEBBCE1C30B34C48004E1BD2 /* TaxonMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCE1430B34C48004E1BD2 /* TaxonMapperTests.swift */; };
+		BEBBCE1E30B34C48004E1BD2 /* ObservationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCE1D30B34C48004E1BD2 /* ObservationRepository.swift */; };
+		CA0000000000000000000011 /* SearchCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0000000000000000000001 /* SearchCache.swift */; };
+		CA0000000000000000000012 /* SearchCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0000000000000000000002 /* SearchCacheTests.swift */; };
+		DB0000000000000000000001 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000001 /* Palette.swift */; };
+		DB0000000000000000000002 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000002 /* Typography.swift */; };
+		DB0000000000000000000003 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000003 /* Spacing.swift */; };
+		DB0000000000000000000004 /* EditorialFallbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000004 /* EditorialFallbackView.swift */; };
+		DB0000000000000000000005 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000005 /* ExploreView.swift */; };
+		DB0000000000000000000006 /* BrandHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000006 /* BrandHeader.swift */; };
+		DB0000000000000000000007 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000007 /* SearchField.swift */; };
+		DB0000000000000000000008 /* GroupTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000008 /* GroupTile.swift */; };
+		DB0000000000000000000009 /* UnderTheRadarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000009 /* UnderTheRadarSection.swift */; };
+		DB0000000000000000000010 /* SpeciesCountsResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000010 /* SpeciesCountsResponseDTO.swift */; };
+		DB0000000000000000000011 /* SpeciesCountDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000011 /* SpeciesCountDTO.swift */; };
+		DB0000000000000000000012 /* ResultsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000012 /* ResultsState.swift */; };
+		DB0000000000000000000013 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000013 /* SearchViewModel.swift */; };
+		DB0000000000000000000014 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000014 /* ResultsViewModel.swift */; };
+		DB0000000000000000000015 /* SpeciesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000015 /* SpeciesRoute.swift */; };
+		DB0000000000000000000016 /* TaxonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000016 /* TaxonRow.swift */; };
+		DB0000000000000000000017 /* TaxonResultsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000017 /* TaxonResultsList.swift */; };
+		DB0000000000000000000018 /* ResultsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000018 /* ResultsScreen.swift */; };
+		DB0000000000000000000020 /* iNaturalistTaxonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000020 /* iNaturalistTaxonRepositoryTests.swift */; };
+		DB0000000000000000000021 /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000021 /* SearchViewModelTests.swift */; };
+		DB0000000000000000000022 /* ResultsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000022 /* ResultsViewModelTests.swift */; };
+		DB0000000000000000000023 /* SpeciesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000023 /* SpeciesDetailView.swift */; };
+		DB0000000000000000000024 /* SpeciesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000024 /* SpeciesDetailViewModel.swift */; };
+		DB0000000000000000000025 /* PhotoCredit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000025 /* PhotoCredit.swift */; };
+		DB0000000000000000000026 /* PhotoViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000026 /* PhotoViewerView.swift */; };
+		DB0000000000000000000027 /* PhotoLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000027 /* PhotoLicense.swift */; };
+		DB0000000000000000000028 /* RemotePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000028 /* RemotePhoto.swift */; };
+		DB0000000000000000000029 /* PhotoLicenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000029 /* PhotoLicenseTests.swift */; };
+		DB0000000000000000000030 /* SpeciesDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000030 /* SpeciesDetailViewModelTests.swift */; };
+		DB0000000000000000000031 /* LocalPhotoBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0000000000000000000031 /* LocalPhotoBackground.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEBBCD9C30B250E3004E1BD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEBBCD8630B250DD004E1BD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEBBCD8D30B250DD004E1BD2;
+			remoteInfo = MIRABILIA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA0000000000000000000001 /* Taxon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taxon.swift; sourceTree = "<group>"; };
+		AA0000000000000000000002 /* TaxonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxonRepository.swift; sourceTree = "<group>"; };
+		AA0000000000000000000003 /* SearchTaxaUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTaxaUseCase.swift; sourceTree = "<group>"; };
+		BEBBCD8E30B250DD004E1BD2 /* MIRABILIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIRABILIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBBCD9B30B250E3004E1BD2 /* MIRABILIATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIRABILIATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBBCDB930B25187004E1BD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEBBCDBA30B25187004E1BD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BEBBCDBB30B25187004E1BD2 /* MIRABILIAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIRABILIAApp.swift; sourceTree = "<group>"; };
+		BEBBCDD430B34771004E1BD2 /* TaxaResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxaResponseDTO.swift; sourceTree = "<group>"; };
+		BEBBCDD530B34771004E1BD2 /* TaxonDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxonDTO.swift; sourceTree = "<group>"; };
+		BEBBCDD730B34771004E1BD2 /* HTTPTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTransport.swift; sourceTree = "<group>"; };
+		BEBBCDD830B34771004E1BD2 /* iNaturalistClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistClient.swift; sourceTree = "<group>"; };
+		BEBBCDD930B34771004E1BD2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BEBBCDDA30B34771004E1BD2 /* URLSessionHTTPTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPTransport.swift; sourceTree = "<group>"; };
+		BEBBCDE830B34B76004E1BD2 /* Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
+		BEBBCDE930B34B76004E1BD2 /* TaxonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxonGroup.swift; sourceTree = "<group>"; };
+		BEBBCDEA30B34B76004E1BD2 /* TaxonPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxonPhoto.swift; sourceTree = "<group>"; };
+		BEBBCDF130B34B92004E1BD2 /* ObservationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationDTO.swift; sourceTree = "<group>"; };
+		BEBBCDF230B34B92004E1BD2 /* ObservationResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationResponseDTO.swift; sourceTree = "<group>"; };
+		BEBBCDF330B34B92004E1BD2 /* PhotoDetailDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailDTO.swift; sourceTree = "<group>"; };
+		BEBBCDF430B34B92004E1BD2 /* TaxonPhotoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxonPhotoDTO.swift; sourceTree = "<group>"; };
+		BEBBCDFD30B34BC6004E1BD2 /* ObservationMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationMapper.swift; sourceTree = "<group>"; };
+		BEBBCDFE30B34BC6004E1BD2 /* TaxonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxonMapper.swift; sourceTree = "<group>"; };
+		BEBBCE0030B34BC6004E1BD2 /* iNaturalistObservationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistObservationRepository.swift; sourceTree = "<group>"; };
+		BEBBCE0130B34BC6004E1BD2 /* iNaturalistTaxonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistTaxonRepository.swift; sourceTree = "<group>"; };
+		BEBBCE0230B34BC6004E1BD2 /* PhotoPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPolicy.swift; sourceTree = "<group>"; };
+		BEBBCE0330B34BC6004E1BD2 /* TaxonGroupIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxonGroupIDs.swift; sourceTree = "<group>"; };
+		BEBBCE1130B34C48004E1BD2 /* iNaturalistClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistClientTests.swift; sourceTree = "<group>"; };
+		BEBBCE1230B34C48004E1BD2 /* ObservationMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationMapperTests.swift; sourceTree = "<group>"; };
+		BEBBCE1330B34C48004E1BD2 /* PhotoPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPolicyTests.swift; sourceTree = "<group>"; };
+		BEBBCE1430B34C48004E1BD2 /* TaxonMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxonMapperTests.swift; sourceTree = "<group>"; };
+		BEBBCE1630B34C48004E1BD2 /* SearchTaxaUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTaxaUseCaseTests.swift; sourceTree = "<group>"; };
+		BEBBCE1D30B34C48004E1BD2 /* ObservationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationRepository.swift; sourceTree = "<group>"; };
+		CA0000000000000000000001 /* SearchCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCache.swift; sourceTree = "<group>"; };
+		CA0000000000000000000002 /* SearchCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCacheTests.swift; sourceTree = "<group>"; };
+		DA0000000000000000000001 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		DA0000000000000000000002 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		DA0000000000000000000003 /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		DA0000000000000000000004 /* EditorialFallbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorialFallbackView.swift; sourceTree = "<group>"; };
+		DA0000000000000000000005 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		DA0000000000000000000006 /* BrandHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandHeader.swift; sourceTree = "<group>"; };
+		DA0000000000000000000007 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		DA0000000000000000000008 /* GroupTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTile.swift; sourceTree = "<group>"; };
+		DA0000000000000000000009 /* UnderTheRadarSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderTheRadarSection.swift; sourceTree = "<group>"; };
+		DA0000000000000000000010 /* SpeciesCountsResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesCountsResponseDTO.swift; sourceTree = "<group>"; };
+		DA0000000000000000000011 /* SpeciesCountDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesCountDTO.swift; sourceTree = "<group>"; };
+		DA0000000000000000000012 /* ResultsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsState.swift; sourceTree = "<group>"; };
+		DA0000000000000000000013 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		DA0000000000000000000014 /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
+		DA0000000000000000000015 /* SpeciesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesRoute.swift; sourceTree = "<group>"; };
+		DA0000000000000000000016 /* TaxonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxonRow.swift; sourceTree = "<group>"; };
+		DA0000000000000000000017 /* TaxonResultsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxonResultsList.swift; sourceTree = "<group>"; };
+		DA0000000000000000000018 /* ResultsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsScreen.swift; sourceTree = "<group>"; };
+		DA0000000000000000000020 /* iNaturalistTaxonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistTaxonRepositoryTests.swift; sourceTree = "<group>"; };
+		DA0000000000000000000021 /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
+		DA0000000000000000000022 /* ResultsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModelTests.swift; sourceTree = "<group>"; };
+		DA0000000000000000000023 /* SpeciesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesDetailView.swift; sourceTree = "<group>"; };
+		DA0000000000000000000024 /* SpeciesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesDetailViewModel.swift; sourceTree = "<group>"; };
+		DA0000000000000000000025 /* PhotoCredit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCredit.swift; sourceTree = "<group>"; };
+		DA0000000000000000000026 /* PhotoViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerView.swift; sourceTree = "<group>"; };
+		DA0000000000000000000027 /* PhotoLicense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLicense.swift; sourceTree = "<group>"; };
+		DA0000000000000000000028 /* RemotePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePhoto.swift; sourceTree = "<group>"; };
+		DA0000000000000000000029 /* PhotoLicenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLicenseTests.swift; sourceTree = "<group>"; };
+		DA0000000000000000000030 /* SpeciesDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesDetailViewModelTests.swift; sourceTree = "<group>"; };
+		DA0000000000000000000031 /* LocalPhotoBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPhotoBackground.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEBBCD8B30B250DD004E1BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBBCD9830B250E3004E1BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0000000000000000000021 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBCDE830B34B76004E1BD2 /* Observation.swift */,
+				BEBBCDE930B34B76004E1BD2 /* TaxonGroup.swift */,
+				BEBBCDEA30B34B76004E1BD2 /* TaxonPhoto.swift */,
+				AA0000000000000000000001 /* Taxon.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000022 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000002 /* TaxonRepository.swift */,
+				BEBBCE1D30B34C48004E1BD2 /* ObservationRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000023 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000003 /* SearchTaxaUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		BEBBCD8530B250DD004E1BD2 = {
+			isa = PBXGroup;
+			children = (
+				BEBBCDBC30B25187004E1BD2 /* MIRABILIA */,
+				BEBBCDC130B2518B004E1BD2 /* MIRABILIATests */,
+				BEBBCD8F30B250DD004E1BD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEBBCD8F30B250DD004E1BD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBCD8E30B250DD004E1BD2 /* MIRABILIA.app */,
+				BEBBCD9B30B250E3004E1BD2 /* MIRABILIATests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEBBCDBC30B25187004E1BD2 /* MIRABILIA */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBCDC830B251D4004E1BD2 /* App */,
+				BEBBCDC930B251E0004E1BD2 /* Domain */,
+				BEBBCDCA30B251EF004E1BD2 /* Data */,
+				BEBBCDCB30B251F8004E1BD2 /* Presentation */,
+				BEBBCDCC30B25201004E1BD2 /* Resources */,
+			);
+			path = MIRABILIA;
+			sourceTree = "<group>";
+		};
+		BEBBCDC130B2518B004E1BD2 /* MIRABILIATests */ = {
+			isa = PBXGroup;
+			children = (
+				DC0000000000000000000006 /* PresentationTests */,
+				BEBBCE1530B34C48004E1BD2 /* DataTests */,
+				BEBBCE1730B34C48004E1BD2 /* DomainTests */,
+			);
+			path = MIRABILIATests;
+			sourceTree = "<group>";
+		};
+		BEBBCDC830B251D4004E1BD2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBCDBB30B25187004E1BD2 /* MIRABILIAApp.swift */,
+				BEBBCDBA30B25187004E1BD2 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BEBBCDC930B251E0004E1BD2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000021 /* Entities */,
+				AA0000000000000000000022 /* Repositories */,
+				AA0000000000000000000023 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BEBBCDCA30B251EF004E1BD2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CA0000000000000000000021 /* Cache */,
+				BEBBCDFF30B34BC6004E1BD2 /* Mappers */,
+				BEBBCE0430B34BC6004E1BD2 /* Repositories */,
+				BEBBCDD630B34771004E1BD2 /* DTOs */,
+				BEBBCDDB30B34771004E1BD2 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BEBBCDCB30B251F8004E1BD2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DC0000000000000000000004 /* Results */,
+				DC0000000000000000000005 /* SpeciesDetail */,
+				DC0000000000000000000001 /* Theme */,
+				DC0000000000000000000002 /* Components */,
+				DC0000000000000000000003 /* Explore */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BEBBCDCC30B25201004E1BD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBCDB930B25187004E1BD2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEBBCDD630B34771004E1BD2 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				DA0000000000000000000010 /* SpeciesCountsResponseDTO.swift */,
+				DA0000000000000000000011 /* SpeciesCountDTO.swift */,
+				BEBBCDF130B34B92004E1BD2 /* ObservationDTO.swift */,
+				BEBBCDF230B34B92004E1BD2 /* ObservationResponseDTO.swift */,
+				BEBBCDF330B34B92004E1BD2 /* PhotoDetailDTO.swift */,
+				BEBBCDF430B34B92004E1BD2 /* TaxonPhotoDTO.swift */,
+				BEBBCDD430B34771004E1BD2 /* TaxaResponseDTO.swift */,
+				BEBBCDD530B34771004E1BD2 /* TaxonDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		BEBBCDDB30B34771004E1BD2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBCDD730B34771004E1BD2 /* HTTPTransport.swift */,
+				BEBBCDD830B34771004E1BD2 /* iNaturalistClient.swift */,
+				BEBBCDD930B34771004E1BD2 /* NetworkError.swift */,
+				BEBBCDDA30B34771004E1BD2 /* URLSessionHTTPTransport.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BEBBCDFF30B34BC6004E1BD2 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBCDFD30B34BC6004E1BD2 /* ObservationMapper.swift */,
+				BEBBCDFE30B34BC6004E1BD2 /* TaxonMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		BEBBCE0430B34BC6004E1BD2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBCE0030B34BC6004E1BD2 /* iNaturalistObservationRepository.swift */,
+				BEBBCE0130B34BC6004E1BD2 /* iNaturalistTaxonRepository.swift */,
+				BEBBCE0230B34BC6004E1BD2 /* PhotoPolicy.swift */,
+				BEBBCE0330B34BC6004E1BD2 /* TaxonGroupIDs.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BEBBCE1530B34C48004E1BD2 /* DataTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA0000000000000000000020 /* iNaturalistTaxonRepositoryTests.swift */,
+				BEBBCE1130B34C48004E1BD2 /* iNaturalistClientTests.swift */,
+				BEBBCE1230B34C48004E1BD2 /* ObservationMapperTests.swift */,
+				CA0000000000000000000002 /* SearchCacheTests.swift */,
+				BEBBCE1330B34C48004E1BD2 /* PhotoPolicyTests.swift */,
+				BEBBCE1430B34C48004E1BD2 /* TaxonMapperTests.swift */,
+			);
+			path = DataTests;
+			sourceTree = "<group>";
+		};
+		BEBBCE1730B34C48004E1BD2 /* DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBCE1630B34C48004E1BD2 /* SearchTaxaUseCaseTests.swift */,
+			);
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		CA0000000000000000000021 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				CA0000000000000000000001 /* SearchCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		DC0000000000000000000001 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				DA0000000000000000000001 /* Palette.swift */,
+				DA0000000000000000000002 /* Typography.swift */,
+				DA0000000000000000000003 /* Spacing.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		DC0000000000000000000002 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DA0000000000000000000031 /* LocalPhotoBackground.swift */,
+				DA0000000000000000000027 /* PhotoLicense.swift */,
+				DA0000000000000000000028 /* RemotePhoto.swift */,
+				DA0000000000000000000004 /* EditorialFallbackView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DC0000000000000000000003 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				DA0000000000000000000005 /* ExploreView.swift */,
+				DA0000000000000000000006 /* BrandHeader.swift */,
+				DA0000000000000000000007 /* SearchField.swift */,
+				DA0000000000000000000008 /* GroupTile.swift */,
+				DA0000000000000000000009 /* UnderTheRadarSection.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		DC0000000000000000000004 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				DA0000000000000000000012 /* ResultsState.swift */,
+				DA0000000000000000000013 /* SearchViewModel.swift */,
+				DA0000000000000000000014 /* ResultsViewModel.swift */,
+				DA0000000000000000000015 /* SpeciesRoute.swift */,
+				DA0000000000000000000016 /* TaxonRow.swift */,
+				DA0000000000000000000017 /* TaxonResultsList.swift */,
+				DA0000000000000000000018 /* ResultsScreen.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		DC0000000000000000000005 /* SpeciesDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DA0000000000000000000023 /* SpeciesDetailView.swift */,
+				DA0000000000000000000024 /* SpeciesDetailViewModel.swift */,
+				DA0000000000000000000025 /* PhotoCredit.swift */,
+				DA0000000000000000000026 /* PhotoViewerView.swift */,
+			);
+			path = SpeciesDetail;
+			sourceTree = "<group>";
+		};
+		DC0000000000000000000006 /* PresentationTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA0000000000000000000029 /* PhotoLicenseTests.swift */,
+				DA0000000000000000000030 /* SpeciesDetailViewModelTests.swift */,
+				DA0000000000000000000021 /* SearchViewModelTests.swift */,
+				DA0000000000000000000022 /* ResultsViewModelTests.swift */,
+			);
+			path = PresentationTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEBBCD8D30B250DD004E1BD2 /* MIRABILIA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEBBCDAF30B250E3004E1BD2 /* Build configuration list for PBXNativeTarget "MIRABILIA" */;
+			buildPhases = (
+				BEBBCD8A30B250DD004E1BD2 /* Sources */,
+				BEBBCD8B30B250DD004E1BD2 /* Frameworks */,
+				BEBBCD8C30B250DD004E1BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MIRABILIA;
+			packageProductDependencies = (
+			);
+			productName = MIRABILIA;
+			productReference = BEBBCD8E30B250DD004E1BD2 /* MIRABILIA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEBBCD9A30B250E3004E1BD2 /* MIRABILIATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEBBCDB230B250E3004E1BD2 /* Build configuration list for PBXNativeTarget "MIRABILIATests" */;
+			buildPhases = (
+				BEBBCD9730B250E3004E1BD2 /* Sources */,
+				BEBBCD9830B250E3004E1BD2 /* Frameworks */,
+				BEBBCD9930B250E3004E1BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEBBCD9D30B250E3004E1BD2 /* PBXTargetDependency */,
+			);
+			name = MIRABILIATests;
+			packageProductDependencies = (
+			);
+			productName = MIRABILIATests;
+			productReference = BEBBCD9B30B250E3004E1BD2 /* MIRABILIATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEBBCD8630B250DD004E1BD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					BEBBCD8D30B250DD004E1BD2 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					BEBBCD9A30B250E3004E1BD2 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = BEBBCD8D30B250DD004E1BD2;
+					};
+				};
+			};
+			buildConfigurationList = BEBBCD8930B250DD004E1BD2 /* Build configuration list for PBXProject "MIRABILIA" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEBBCD8530B250DD004E1BD2;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BEBBCD8F30B250DD004E1BD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEBBCD8D30B250DD004E1BD2 /* MIRABILIA */,
+				BEBBCD9A30B250E3004E1BD2 /* MIRABILIATests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEBBCD8C30B250DD004E1BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBBCDBD30B25187004E1BD2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBBCD9930B250E3004E1BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEBBCD8A30B250DD004E1BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBBCDBE30B25187004E1BD2 /* ContentView.swift in Sources */,
+				DB0000000000000000000001 /* Palette.swift in Sources */,
+				DB0000000000000000000002 /* Typography.swift in Sources */,
+				DB0000000000000000000003 /* Spacing.swift in Sources */,
+				DB0000000000000000000004 /* EditorialFallbackView.swift in Sources */,
+				DB0000000000000000000005 /* ExploreView.swift in Sources */,
+				DB0000000000000000000006 /* BrandHeader.swift in Sources */,
+				DB0000000000000000000007 /* SearchField.swift in Sources */,
+				DB0000000000000000000008 /* GroupTile.swift in Sources */,
+				DB0000000000000000000009 /* UnderTheRadarSection.swift in Sources */,
+				DB0000000000000000000031 /* LocalPhotoBackground.swift in Sources */,
+				DB0000000000000000000023 /* SpeciesDetailView.swift in Sources */,
+				DB0000000000000000000024 /* SpeciesDetailViewModel.swift in Sources */,
+				DB0000000000000000000025 /* PhotoCredit.swift in Sources */,
+				DB0000000000000000000026 /* PhotoViewerView.swift in Sources */,
+				DB0000000000000000000027 /* PhotoLicense.swift in Sources */,
+				DB0000000000000000000028 /* RemotePhoto.swift in Sources */,
+				DB0000000000000000000010 /* SpeciesCountsResponseDTO.swift in Sources */,
+				DB0000000000000000000011 /* SpeciesCountDTO.swift in Sources */,
+				DB0000000000000000000012 /* ResultsState.swift in Sources */,
+				DB0000000000000000000013 /* SearchViewModel.swift in Sources */,
+				DB0000000000000000000014 /* ResultsViewModel.swift in Sources */,
+				DB0000000000000000000015 /* SpeciesRoute.swift in Sources */,
+				DB0000000000000000000016 /* TaxonRow.swift in Sources */,
+				DB0000000000000000000017 /* TaxonResultsList.swift in Sources */,
+				DB0000000000000000000018 /* ResultsScreen.swift in Sources */,
+				BEBBCDBF30B25187004E1BD2 /* MIRABILIAApp.swift in Sources */,
+				AA0000000000000000000011 /* Taxon.swift in Sources */,
+				AA0000000000000000000012 /* TaxonRepository.swift in Sources */,
+				AA0000000000000000000013 /* SearchTaxaUseCase.swift in Sources */,
+				BEBBCDEB30B34B76004E1BD2 /* TaxonGroup.swift in Sources */,
+				BEBBCDEC30B34B76004E1BD2 /* TaxonPhoto.swift in Sources */,
+				BEBBCDED30B34B76004E1BD2 /* Observation.swift in Sources */,
+				BEBBCDDC30B34771004E1BD2 /* iNaturalistClient.swift in Sources */,
+				BEBBCDDD30B34771004E1BD2 /* TaxaResponseDTO.swift in Sources */,
+				BEBBCDDE30B34771004E1BD2 /* HTTPTransport.swift in Sources */,
+				BEBBCDDF30B34771004E1BD2 /* TaxonDTO.swift in Sources */,
+				BEBBCE0B30B34BC6004E1BD2 /* TaxonMapper.swift in Sources */,
+				BEBBCE0C30B34BC6004E1BD2 /* ObservationMapper.swift in Sources */,
+				BEBBCE0D30B34BC6004E1BD2 /* iNaturalistTaxonRepository.swift in Sources */,
+				BEBBCE0E30B34BC6004E1BD2 /* TaxonGroupIDs.swift in Sources */,
+				BEBBCE0F30B34BC6004E1BD2 /* PhotoPolicy.swift in Sources */,
+				BEBBCE1030B34BC6004E1BD2 /* iNaturalistObservationRepository.swift in Sources */,
+				BEBBCDF530B34B92004E1BD2 /* ObservationResponseDTO.swift in Sources */,
+				BEBBCDF630B34B92004E1BD2 /* TaxonPhotoDTO.swift in Sources */,
+				BEBBCDF730B34B92004E1BD2 /* ObservationDTO.swift in Sources */,
+				BEBBCDF830B34B92004E1BD2 /* PhotoDetailDTO.swift in Sources */,
+				BEBBCDE030B34771004E1BD2 /* NetworkError.swift in Sources */,
+				BEBBCDE130B34771004E1BD2 /* URLSessionHTTPTransport.swift in Sources */,
+				BEBBCE1E30B34C48004E1BD2 /* ObservationRepository.swift in Sources */,
+				CA0000000000000000000011 /* SearchCache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBBCD9730B250E3004E1BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBBCE1830B34C48004E1BD2 /* SearchTaxaUseCaseTests.swift in Sources */,
+				BEBBCE1930B34C48004E1BD2 /* iNaturalistClientTests.swift in Sources */,
+				BEBBCE1A30B34C48004E1BD2 /* ObservationMapperTests.swift in Sources */,
+				BEBBCE1B30B34C48004E1BD2 /* PhotoPolicyTests.swift in Sources */,
+				BEBBCE1C30B34C48004E1BD2 /* TaxonMapperTests.swift in Sources */,
+				CA0000000000000000000012 /* SearchCacheTests.swift in Sources */,
+				DB0000000000000000000020 /* iNaturalistTaxonRepositoryTests.swift in Sources */,
+				DB0000000000000000000021 /* SearchViewModelTests.swift in Sources */,
+				DB0000000000000000000022 /* ResultsViewModelTests.swift in Sources */,
+				DB0000000000000000000029 /* PhotoLicenseTests.swift in Sources */,
+				DB0000000000000000000030 /* SpeciesDetailViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEBBCD9D30B250E3004E1BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEBBCD8D30B250DD004E1BD2 /* MIRABILIA */;
+			targetProxy = BEBBCD9C30B250E3004E1BD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BEBBCDAD30B250E3004E1BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2RNDKTU4K4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEBBCDAE30B250E3004E1BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2RNDKTU4K4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEBBCDB030B250E3004E1BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RNDKTU4K4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chripolo.MIRABILIA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEBBCDB130B250E3004E1BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RNDKTU4K4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chripolo.MIRABILIA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEBBCDB330B250E3004E1BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RNDKTU4K4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chripolo.MIRABILIATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MIRABILIA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MIRABILIA";
+			};
+			name = Debug;
+		};
+		BEBBCDB430B250E3004E1BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RNDKTU4K4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chripolo.MIRABILIATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MIRABILIA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MIRABILIA";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEBBCD8930B250DD004E1BD2 /* Build configuration list for PBXProject "MIRABILIA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEBBCDAD30B250E3004E1BD2 /* Debug */,
+				BEBBCDAE30B250E3004E1BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEBBCDAF30B250E3004E1BD2 /* Build configuration list for PBXNativeTarget "MIRABILIA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEBBCDB030B250E3004E1BD2 /* Debug */,
+				BEBBCDB130B250E3004E1BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEBBCDB230B250E3004E1BD2 /* Build configuration list for PBXNativeTarget "MIRABILIATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEBBCDB330B250E3004E1BD2 /* Debug */,
+				BEBBCDB430B250E3004E1BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEBBCD8630B250DD004E1BD2 /* Project object */;
+}
