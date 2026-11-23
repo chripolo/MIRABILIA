@@ -8,11 +8,9 @@ MIRABILIA es una aplicación nativa de iOS para descubrir organismos documentado
 
 - **Explore:** pantalla de inicio estática. No realiza peticiones de red al abrirse.
 - **Búsqueda** por nombre común o científico, con debounce y cancelación.
-- **Cuatro grupos:** Insects, Plants, Birds y Fungi, cargados al entrar en cada uno.
+- **Cuatro grupos:** Insects, Plants, Birds y Fungi, cargados al entrar en cada uno. Solo se muestra la primera página de resultados de cada lista.
 - **Under the Radar:** organismos con *menos observaciones registradas en iNaturalist*. Es un dato de la plataforma; no implica que sean biológicamente raros ni amenazados.
 - **Species Detail:** fotografía principal (4:3), nombre común y científico, rango, grupo, número de observaciones y galería de fotografías con autor y licencia. Cada foto de la galería se puede ampliar y abrir a tamaño completo.
-
-Fuera del alcance: mapas, geolocalización, favoritos, cuentas, persistencia y paginación (solo se carga la primera página de cada lista).
 
 ## Capturas
 
